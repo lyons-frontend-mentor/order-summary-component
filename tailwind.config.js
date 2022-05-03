@@ -7,7 +7,8 @@ module.exports = {
         brightblue: "hsl(245, 75%, 52%)",
         verypaleblue: "hsl(225, 100%, 98%)",
         desatblue: "hsl(224, 23%, 55%)",
-        darkblue: "hsl(223, 47%, 23%)"
+        darkblue: "hsl(223, 47%, 23%)",
+        active: "hsl(245, 83%, 68%)"
       },
       fontFamily: {
         redhat: ["Red Hat Display", "sans-serif"]

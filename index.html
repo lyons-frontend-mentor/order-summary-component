@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,16 +31,60 @@
       }
     </style>
   </head>
-  <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+  <body class="flex min-h-screen items-center bg-paleblue font-redhat">
+    <picture class="z-0">
+      <source
+        media="(min-width:768px)"
+        srcset="./images/pattern-background-desktop.svg"
+      />
+      <img
+        src="./images/pattern-background-mobile.svg"
+        alt=""
+        class="max-w-screen absolute left-0 top-0 z-0 w-full"
+      />
+    </picture>
+    <main class="relative flex w-full items-center justify-center px-6 py-10">
+      <section
+        class="z-10 max-w-md overflow-hidden rounded-2xl bg-white drop-shadow-[0_40px_40px_-20px_hsla(228,87%,39%,0.15)]"
+      >
+        <img src="images/illustration-hero.svg" alt="" class="w-full" />
+        <!-- div for applying padding to rest of content -->
+        <div class="flex flex-col p-8 sm:p-12">
+          <h1 class="text-center text-2xl font-black text-darkblue">
+            Order Summary
+          </h1>
+          <p class="mt-4 text-center text-desatblue">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div
+            class="mt-6 flex items-center rounded-xl bg-verypaleblue p-4 sm:p-6"
+          >
+            <img src="./images/icon-music.svg" alt="" class="mr-5" />
+            <p class="grow text-sm text-desatblue sm:text-base">
+              <span class="font-black text-darkblue">Annual Plan</span>
+              <br />
+              $59.99/year
+            </p>
+            <button
+              class="text-sm font-bold text-brightblue underline hover:text-active hover:no-underline focus-visible:text-active focus-visible:no-underline focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-inherit"
+            >
+              Change
+            </button>
+          </div>
+          <a
+            href="#"
+            class="drop-shadow-brightblue mt-8 block w-full cursor-pointer rounded-xl bg-brightblue p-4 text-center text-base font-black text-white drop-shadow-[0_20px_20px_hsla(245,75%,52%,0.19)] hover:bg-active focus-visible:bg-active focus-visible:underline focus-visible:outline-0"
+          >
+            Proceed to Payment
+          </a>
+          <button
+            class="mt-8 inline-block w-fit self-center text-sm font-black text-desatblue hover:text-darkblue focus-visible:text-darkblue focus-visible:underline focus-visible:outline-0"
+          >
+            Cancel Order
+          </button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
